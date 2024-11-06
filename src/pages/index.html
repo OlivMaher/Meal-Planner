@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>What2Eat</title>
+        <link rel="stylesheet" href="/src/styles/style.css">
+    </head>
+    <body>
+        <!-- Nav Bar -->
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </div>
+        <h1>Meal Planner</h1>
+        <section id="preferences">
+            <h2>Select Your Dietary Preferences</h2>
+            <form id="preferences-form">
+                <div class = "diet-buttons">
+                    <button type="button" class="preference-btn" data-preference="vegetarian">Vegetarian</button>
+                    <button type="button" class="preference-btn" data-preference="vegan">Vegan</button>
+                    <button type="button" class="preference-btn" data-preference="keto">Keto</button>
+                    <button type="button" class="preference-btn" data-preference="paleo">Paleo</button>
+                    <button type="button" class="preference-btn" data-preference="low-carb">Low-Carb</button>
+                    <button type="button" class="preference-btn" data-preference="mediterranean">Mediterranean</button>
+                    <button type="button" class="preference-btn" data-preference="high-protein">High Protein</button>
+                    <button type="button" class="preference-btn" data-preference="none">None</button>
+                </div>
+                <h3>Set Calorie Goal:</h3>
+                <input type="number" id="calories" name="calories" placeholder="Calories per day" min="0" required>
+                <button type="submit">Generate Meal Plan</button>          
+            </form>
+        </section>
+    </body>
+</html>
